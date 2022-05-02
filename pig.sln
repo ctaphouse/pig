@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30114.105
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "pig.api", "pig.api\pig.api.csproj", "{29F66C53-3F71-4529-BFD6-6AD8E0934584}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "pig.client", "pig.client\pig.client.csproj", "{2EC3C183-D4EC-4343-9110-186CA653069B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "pig.shared", "pig.shared\pig.shared.csproj", "{C8B750BB-4C25-46AA-80F2-F5D55F8941D7}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{29F66C53-3F71-4529-BFD6-6AD8E0934584}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{29F66C53-3F71-4529-BFD6-6AD8E0934584}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{29F66C53-3F71-4529-BFD6-6AD8E0934584}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{29F66C53-3F71-4529-BFD6-6AD8E0934584}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2EC3C183-D4EC-4343-9110-186CA653069B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2EC3C183-D4EC-4343-9110-186CA653069B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2EC3C183-D4EC-4343-9110-186CA653069B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2EC3C183-D4EC-4343-9110-186CA653069B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C8B750BB-4C25-46AA-80F2-F5D55F8941D7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C8B750BB-4C25-46AA-80F2-F5D55F8941D7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C8B750BB-4C25-46AA-80F2-F5D55F8941D7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C8B750BB-4C25-46AA-80F2-F5D55F8941D7}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
