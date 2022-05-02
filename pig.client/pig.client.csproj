@@ -7,8 +7,15 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="blazored.fluentvalidation" Version="2.0.3" />
+    <PackageReference Include="mediatR" Version="10.0.1" />
+    <PackageReference Include="mediatR.extensions.microsoft.dependencyinjection" Version="10.0.1" />
     <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly" Version="6.0.4" />
     <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly.DevServer" Version="6.0.4" PrivateAssets="all" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\pig.shared\pig.shared.csproj" />
   </ItemGroup>
 
 </Project>
