@@ -6,10 +6,7 @@ public class StudentDto
     public string FirstName { get; set; } = default!;
     public string LastName { get; set; } = default!;
     public int DepartmentId { get; set; }
-    public Department Department { get; set; } = default!;
-    public ICollection<Course> Courses { get; set; } = new List<Course>();
-
-    
+    public ICollection<CourseStudent> CourseStudent { get; set; } = new List<CourseStudent>();    
 }
 
 public class Department
@@ -18,8 +15,8 @@ public class Department
         public string Name { get; set; } = default!;
     }
 
-    public class Course
+    public class CourseStudent
     {
-        public int Id { get; set; }
-        public string Name { get; set; } = default!;
+        public int CourseId { get; set; }
+        public int StudentId { get; set; }
     }
