@@ -20,7 +20,7 @@ public class AddStudentEndpoint : EndpointBaseAsync.WithRequest<AddStudentReques
     {
         var student = new Student
         {
-            Id = request.Student.Id,
+            // Id = request.Student.Id,
             FirstName = request.Student.FirstName,
             LastName = request.Student.LastName,
             DepartmentId = request.Student.DepartmentId,            
@@ -28,13 +28,13 @@ public class AddStudentEndpoint : EndpointBaseAsync.WithRequest<AddStudentReques
 
         await _context.AddAsync(student);
 
-        var courseStudents = request.Student.CourseStudent.Select(j => new CourseStudent
+        var courses = request.Student.Courses.Select(j => new CourseStudent
         {
             CourseId = j.CourseId,
             Student = student
         });
 
-        await _context.AddRangeAsync(courseStudents);
+        await _context.AddRangeAsync(courses);
 
         await _context.SaveChangesAsync(cancellationToken);
 
